@@ -16,7 +16,7 @@
 <meta property="og:description" content="UVa340[Master-Mind Hints]题意 略 例题，书中讲解详细。 思路简单，直接暴力搞一搞，需要注意一下B的计算方法：对每个数字（1~9）统计其在两个串中出现的次数c1,c2， min{c1，c2}就是该数字对B的贡献，加起来最后减去A即为所求。 UVa1583[Digit Generator]题意 求某数的最小生成元（若x加上x的各个数字之和为y，则x为y的生成元） 例题，书中讲">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-08-15T09:04:06.000Z">
-<meta property="article:modified_time" content="2020-08-15T18:35:18.106Z">
+<meta property="article:modified_time" content="2020-08-15T18:46:33.955Z">
 <meta property="article:author" content="Amazing">
 <meta property="article:tag" content="紫书 题解 UVa">
 <meta name="twitter:card" content="summary">
@@ -195,7 +195,7 @@ var _hmt = _hmt || [];
 <h2 id="UVa1584-Circular-Sequence"><a href="#UVa1584-Circular-Sequence" class="headerlink" title="UVa1584[Circular Sequence]"></a>UVa1584[Circular Sequence]</h2><p>题意 略</p>
 <p>书中例题，讲解详细。</p>
 <p>出现了字典序，要额外写一个判断两点字典序的函数，如下：</p>
-<p>`int less(char* s,int a,int b){ //验证以a为起点的字典序是否小于以b为起点的！</p>
+<p><code>int less(char* s,int a,int b)&#123; //验证以a为起点的字典序是否小于以b为起点的！</code></p>
 <p>  <code>int n=strlen(s);</code></p>
 <p>  <code>for(int i=0;i&lt;n;i++)&#123;</code></p>
 <p>​    <code>if(s[(a+i)%n]!=s[(b+i)%n]) return s[(a+i)%n]&lt;s[(b+i)%n];</code></p>
